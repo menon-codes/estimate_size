@@ -7,7 +7,7 @@ license = "MIT"
 description = "Replaces an iterator's `size_hint` with a custom value."
 readme = "README.md"
 keywords = ["iterator", "data-structure"]
-categories = ["rust-patterns", "iterator"]
+categories = ["rust-patterns"]
 
 
 [dependencies]
