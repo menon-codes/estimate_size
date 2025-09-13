@@ -1,0 +1,13 @@
+[package]
+name = "estimate_size"
+version = "0.1.0"
+edition = "2024"
+authors = ["menon-codes <ad.menon.dev@gmail.com>"]
+license = "MIT"
+description = "Replaces an iterator's `size_hint` with a custom value."
+readme = "README.md"
+keywords = ["iterator", "data-structure"]
+categories = ["rust-patterns", "iterator"]
+
+
+[dependencies]
