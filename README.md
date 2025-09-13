@@ -6,5 +6,5 @@ A library used on iterators which allows adapting a custom size_hint with your e
 
 ```rust
 use estimate_size::EstimateSize;
-(0..10).filter(|x| x % 2 == 0).hint_size(5)
+(0..10).filter(|x| x % 2 == 0).estimate_exact_size(5)
 ```
