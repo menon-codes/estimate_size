@@ -8,6 +8,21 @@ description = "Replaces an iterator's `size_hint` with a custom value."
 readme = "README.md"
 keywords = ["iterator", "data-structure"]
 categories = ["rust-patterns"]
-
+exclude = [
+	"benches/*",
+	"target/*",
+	".git/*"
+]
 
 [dependencies]
+
+[dev-dependencies]
+criterion = { version = "0.7.0", features = ["html_reports"] }
+
+[[bench]]
+name = "benchmark"
+harness = false
+
+[[bench]]
+name = "simple"
+harness = false
