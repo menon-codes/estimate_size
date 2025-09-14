@@ -11,7 +11,7 @@ impl<I: Iterator + Sized> Iterator for SizeEstimate<I> {
     #[inline]
     fn next(&mut self) -> Option<Self::Item> {
         self.lower = self.lower.saturating_sub(1);
-        self.upper = self.upper.and_then(|u| u.checked_sub(1));
+        self.upper = self.upper.map(|u| u.saturating_sub(1));
 
         self.iter.next()
     }
